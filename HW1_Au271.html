@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--internal CSS styling is used here. it begins frpm the from the next tab-->
+        <style>
+            /*styling for the body*/
+            body{
+                background-color: white;
+            }
+            /* styling for the class .entire form*/
+            .entire form {
+                border-radius: 5px;
+                background-color:gainsboro;
+                padding: 20px;
+            }
+
+            /*styling for input tag of type text and select tag*/
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid rgb(231, 231, 231);
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            /*Styling for the submit button*/
+            input[type=submit] {
+                background-color: green;
+                color: white;
+                width: 10%;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                padding: 14px 20px;
+                margin: 8px 0;    
+            }
+
+            /*styling to make the button change color when the cursor hovers on it*/
+            input[type=submit]:hover {
+                background-color: lightgreen;
+            }
+
+            /*Stying for the text area*/
+            #subject {   
+                height: 220px;
+                padding: 18px 25px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                box-sizing: border-box;
+                font-size: 21px;
+                border: 3px solid rgb(214, 211, 211);
+                border-radius: 4px;
+                background-color: whitesmoke;
+                width: 100%;
+            }
+        </style>
+        <!--End of internal styling-->
+    </head>
+        <!--Body for the code begins-->
+        <body>
+        <!--Title for the form is below-->
+        <h2>FRIEND REQUEST</h2>
+        <!--Begining of div-->
+      <div class="entire form">
+        <form action="/action_page.php">
+            <!--Beginning of code for first name and last name-->
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" placeholder="Your name"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" placeholder="Your Last Name"><br>
+            <!--Beginning of code for the lable Country and countries to be selected-->
+            <label for="country">Country:</label><br>
+            <select id="country">select country>
+                <option value="country">Ghana</option>
+                <option value="country"></option>
+                <option value="country">China</option>
+                <option value="country">Rwanda</option>
+                <option value="country">Russia</option>
+                <option value="country">Nigeria</option>
+            </select>
+            <!--Code for the lable Subject and textarea-->
+            <label for="subject">Subject:</label><br>
+            <textarea type="text" id="subject" name="subject" placeholder="Write something..."></textarea><br>
+        <!--Code for the submit button-->
+            <input type="Submit" id="submit" value="Submit">
+        </form>
+    </div>  
+    <!--End of div-->
+        </body>
+        <!--End of body-->
+</html>
